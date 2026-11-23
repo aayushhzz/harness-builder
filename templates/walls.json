@@ -1,0 +1,11 @@
+{
+  "allow_write": ["<glob: paths the agent may write>"],
+  "deny_write": ["harness/walls.json", "harness/hooks/**", "harness/run.py", "harness/sdk_walls.py", "harness/run.ts", "harness/sdk_walls.ts", "harness/ma/**", "harness/IMPROVE.md", "harness/traces/**", "harness/status.json", ".claude/settings.json"],
+  "allow_read": ["<glob: paths the agent may read>"],
+  "deny_read": ["<glob: paths the agent may not read>"],
+  "allow_bash": ["<command prefix the agent may run>"],
+  "deny_bash": ["<command prefix the agent may not run>"],
+  "allow_tools": ["<tool name the agent may use>"],
+  "ask": ["Edit(harness/checks.sh)", "Write(harness/checks.sh)", "Edit(harness/contract.md)", "Write(harness/contract.md)", "<Tool(specifier) for irreversible action, e.g. Bash(git push:*)>"],
+  "network_allow": ["<host the agent may reach>"]
+}
